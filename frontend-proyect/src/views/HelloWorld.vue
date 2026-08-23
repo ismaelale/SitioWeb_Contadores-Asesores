@@ -25,13 +25,13 @@ const toggleMenu = () => {
 
         <ul class="flex flex-col gap-7 md:flex-row md:mx-auto lg:gap-20">
           <li>
-            <a href="#" class="text-white font-semibold text-lg" @click="isOpenMenu = false">Preguntas</a>
+            <a href="#" class="font-semibold text-lg" @click="isOpenMenu = false">Preguntas</a>
           </li>
           <li>
-            <a href="#" class="text-white font-semibold text-lg" @click="isOpenMenu = false">Servicios</a>
+            <a href="#" class="font-semibold text-lg" @click="isOpenMenu = false">Servicios</a>
           </li>
           <li>
-            <a href="#" class="text-white font-semibold text-lg" @click="isOpenMenu = false">Nosotros</a>
+            <a href="#" class="font-semibold text-lg" @click="isOpenMenu = false">Nosotros</a>
           </li>
         </ul>
 
@@ -42,32 +42,38 @@ const toggleMenu = () => {
 
     </header>
 
-    <main class="flex p-4 flex-col">
+    <main class="flex p-4 flex-col lg:w-full lg:max-w-7xl lg:mx-auto">
 
-      <section class="mt-8 mb-12">
-        <div class="bg-blue-200 p-3 rounded-xl text-center mb-6 inline-block w-full">  
-          <p class="text-center">
-            ASESORIA FISCAL & ASESORIA CONTABLE
-          </p>
+      <section class="mt-20 mb-30">
+        
+        <div class="lg:grid lg:grid-cols-2 lg:place-items-center">
+          <div>
+            <div class="bg-blue-200 p-3 rounded-xl text-center mb-6 inline-block w-full lg:max-w-sm">  
+              <p class="text-center">
+                ASESORIA FISCAL & ASESORIA CONTABLE
+              </p>
+            </div>
+
+            <h2 class="text-3xl mb-4">Rigurosidad Contable y Planeación Fiscal Estratégica</h2>
+
+            <p class="mb-6 text-base leading-relaxed lg:text-lg">Impulsamos el crecimiento de su empresa con una gestión financiera impecable, 
+              total transparencia y cumplimiento normativo estricto bajo el respaldo de González & Asociados.
+            </p>
+            
+            <a class="block bg-blue-200 p-4 text-center text-lg font-bold rounded-xl cursos-pointer mb-6 lg:max-w-sm">Nuestros Servicios</a>
+          </div>
+
+          <img class="w-full rounded-xl aspect-square object-cover lg:w-120 lg:h-full" src="@/assets/mesa_ejecutiva.jpg" alt="">
         </div>
-
-        <h2 class="text-3xl mb-4">Rigurosidad Contable y Planeación Fiscal Estratégica</h2>
-
-        <p class="mb-6 text-base leading-relaxed">Impulsamos el crecimiento de su empresa con una gestión financiera impecable, 
-          total transparencia y cumplimiento normativo estricto bajo el respaldo de González & Asociados.</p>
-        
-        <a class="block bg-blue-200 p-4 text-center text-lg font-bold rounded-xl cursos-pointer mb-6">Nuestros Servicios</a>
-        
-        <img class="w-full rounded-xl aspect-square object-cover" src="@/assets/mesa_ejecutiva.jpg" alt="">
-          
+      
       </section>
 
-      <section class="mb-12">
+      <section class="mb-12 text-center">
         
-        <div class="bg-blue-200 inline-block mb-6 p-3 rounded-xl">
-           <h3 class="text-sm font-semibold">Sobre Nosotros</h3>
+        <div class="bg-blue-200 inline-block mb-10 p-3 rounded-xl lg:w-md">
+           <h3 class="text-sm font-semibold lg:text-xl">Sobre Nosotros</h3>
         </div>
-        <p class="leading-relaxed text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum quidem accusamus iste, 
+        <p class="leading-relaxed text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum quidem accusamus iste, 
           vero cumque blanditiis esse sed error, officiis facilis repellat itaque unde architecto veniam dolorem at distinctio rem? Lorem ipsum dolor sit amet 
           consectetur adipisicing elit. Minima odit labore nostrum fugiat consequuntur placeat quasi voluptates autem dolorem, 
           qui neque praesentium omnis, quidem deserunt hic ab veritatis sunt laboriosam.
@@ -76,6 +82,8 @@ const toggleMenu = () => {
     </main>
 
     <footer class="pie-pagina pb-10 pt-5">
+        
+      <div class="lg:grid lg:grid-cols-2 lg:place-items-center lg:w-full lg:max-w-7xl lg:mx-auto ">
         <div class="py-6 px-4">
           <div class="bg-blue-200 p-3 rounded-xl inline-block font-bold mb-6">
             <p class="text-sm">Contacto Directo</p>
@@ -97,7 +105,7 @@ const toggleMenu = () => {
 
         </div>
 
-        <form action="" class="formulario bg-white m-10 rounded-2xl p-6 space-y-4">
+        <form action="" class="formulario bg-white m-10 rounded-2xl p-6 space-y-4 lg:min-w-sm">
           
           <div class="space-y-2">
             <label for="" class="text-sm font-semibold">Nombre Completo</label>
@@ -121,6 +129,7 @@ const toggleMenu = () => {
             <button class="bg-blue-200 w-full p-3 rounded-xl font-bold hover:bg-blue-300 transition duration-300">Enviar Solicitud</button>
           </div>
         </form>
+      </div>
 
     </footer>
 
