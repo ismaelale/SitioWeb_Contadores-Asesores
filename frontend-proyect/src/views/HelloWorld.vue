@@ -42,10 +42,10 @@ const toggleMenu = () => {
 
     </header>
 
-    <main class="h-screen flex items-center p-7 flex-col">
+    <main class="flex items-center p-7 flex-col">
 
       <section class="mt-5">
-        <p class="bg-blue-200 p-2 pr-3 pl-3 rounded-xl text-center">ASESORIA FISCAL & ASESORIA CONTABLE</p>
+        <p class="border-2 bg-blue-200 p-2 pr-3 pl-3 rounded-xl text-center md:w-sm">ASESORIA FISCAL & ASESORIA CONTABLE</p>
         
         <h2 class="text-3xl mt-7">Rigurosidad Contable y Planeación Fiscal Estratégica</h2>
         <p class="mt-6">Impulsamos el crecimiento de su empresa con una gestión financiera impecable, 
@@ -55,9 +55,47 @@ const toggleMenu = () => {
           
       </section>
 
-      <section>
+      <section class="m-15">
+        <h3 class="border-2 bg-blue-200 p-2 pr-3 pl-3 rounded-xl text-center w-3xs">Sobre Nosotros</h3>
+        <p class="indent-8 mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum quidem accusamus iste, 
+          vero cumque blanditiis esse sed error, officiis facilis repellat itaque unde architecto veniam dolorem at distinctio rem? Lorem ipsum dolor sit amet 
+          consectetur adipisicing elit. Minima odit labore nostrum fugiat consequuntur placeat quasi voluptates autem dolorem, 
+          qui neque praesentium omnis, quidem deserunt hic ab veritatis sunt laboriosam.
+        </p>
       </section>
-
     </main>
+
+    <footer class="pie-pagina pb-10 pt-5">
+        <div class="p-7 flex flex-col gap-6">
+          <p class="contacto-directo border-2 p-2 pr-3 pl-3 rounded-xl text-center w-3xs font-bold">Contacto Directo</p>
+          <p class="text-4xl text-white">
+            Comencemos a optimizar tus finanzas hoy mismo
+          </p>
+          <p class="">
+            Completa el formulario para una pre-evaluación gratuita de tu situación contable y fiscal. 
+            Uno de nuestros socios principales se pondrá en contacto contigo en un plazo menor a 24 horas hábiles.
+          </p>
+          <p>Celular</p>
+          <p>Correo</p>
+          <p>Dirección</p>
+        </div>
+
+        <form action="" class="bg-white m-10 rounded-2xl p-8">
+          <div class="formulario-items flex flex-col gap-4">
+            <label for="">Nombre Completo</label>
+            <input type="text" class="bg-white w-3xs">
+            <label for="">Correo Electronico</label>
+            <input type="text" class="bg-white w-3xs">
+            <label for="">Nombre de tu Empresa / Sector</label>
+            <input type="text" class="bg-white w-3xs">
+            <label for="">Mensaje o Consulta</label>
+            <textarea name="" id="" class="bg-white w-3xs"></textarea>
+          </div>
+          <div class="mt-5">
+            <button class="bg-blue-300 w-full p-3 rounded-xl font-bold">Enviar Solicitud</button>
+          </div>
+        </form>
+
+    </footer>
 
 </template>
