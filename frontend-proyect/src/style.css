@@ -9,20 +9,15 @@ body{
     height: 100vh;
 }
 
-.formulario-items input, textarea{
-    border: 1px solid #000;
-    border-radius: 6px;
-}
-
-.formulario-items textarea{
-    resize: none;
-    min-height: 7rem;
-}
-
 .pie-pagina{
-    background-color: #004D67;
+    background-color: #12b3db;
 }
 
-.contacto-directo{
-    background-color: #b69568;
+.formulario input{
+    width: 100%;
+
+}
+
+.formulario label{
+    display: block;
 }
